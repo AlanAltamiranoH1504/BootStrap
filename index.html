@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 </head>
 <body>
@@ -114,7 +115,7 @@
 
 <section class="seccion">
     <h1 class="text-center my-5 heading">Imágenes</h1>
-<!--    <img src="img/curso_1.jpg" class="img-fluid">-->
+    <!--    <img src="img/curso_1.jpg" class="img-fluid">-->
 
     <div class="container-xl">
         <div class="row">
@@ -137,21 +138,89 @@
     <button class="btn btn-success">Boton</button>
     <button class="btn btn-close-white">Boton</button>
 
+    <button class="btn btn-success">Agregar <i class="bi bi-plus-circle"></i></button>
+    <button class="btn btn-danger">Eliminar <i class="bi bi-x-square"></i></button>
+    <button type="submit" class="btn btn-primary">Enviar Formulario <i class="bi bi-send"></i></button>
+
+    <!--RETO-->
+    <!--Crear un boton que tenga el texto eliminar y dentro un icono que haga referencia eliminar-->
+    <button class="btn btn-danger">Eliminar <i class="bi bi-trash3"></i></button>
 
 </section>
 
 <section class="seccion">
     <h1 class="text-center my-5 heading">Margins y Paddings</h1>
 
+    <div class="container-xl">
+        <div class="bg-success text-white p-2 text-center">Ejemplo de Padding</div>
+        <div class="bg-primary text-white p-2 text-center mt-3">Ejemplo de Margin</div>
+        <button class="btn btn-warning mt-3 mb-3 mx-auto d-block">Advertencia <i class="bi bi-exclamation-triangle"></i>
+        </button>
+
+        <div class="d-grid gap-1">
+            <div class="bg-success text-white p-2 text-center">Ejemplo de Padding</div>
+            <div class="bg-primary text-white p-2 text-center mt-3">Ejemplo de Margin</div>
+        </div>
+    </div>
+
 </section>
 
 <section class="seccion">
     <h1 class="text-center my-5 heading">Spinners</h1>
 
+    <div class="spinner-border"></div><br>
+    <div class="spinner-border text-primary"></div><br>
+    <div class="spinner-border text-danger"></div><br>
+    <div class="spinner-border text-success"></div><br>
+
+    <div class="container-xl d-flex justify-content-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+
 </section>
 
 <section class="seccion">
     <h1 class="text-center my-5 heading">Cards</h1>
+
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/curso_4.jpg">
+                    <div class="card-header text-center fw-bold">ACTUALIZADO</div>
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Fotografia</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        <a class="btn btn-primary d-block" href="#">Agregar Curso <i class="bi bi-bag-plus-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/curso_6.jpg" class="card-img-top">
+                    <div class="card-header text-center fw-bold">Actualizado</div>
+                    <div class="card-body">
+                        <h3 class="card-title text-center">JavaScript</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        <button class="btn btn-primary d-block w-100">Agregar Curso <i class="bi bi-bag-plus-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/curso_3.jpg" class="card-img-top">
+                    <div class="card-header text-center fw-bold">Actualizado</div>
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Finanzas</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        <button class="btn btn-primary w-100">Agregar Curos <i class="bi bi-bag-plus-fill"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>
 
@@ -184,5 +253,5 @@
     <h1 class="text-center my-5 heading">Off Canvas</h1>
 
 </section>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
 </html>
